@@ -1,6 +1,6 @@
-# PST-STACK
+# EST-STACK
 
-PST (Propel ORM - Slim Framework - Twig Template Engine) Stack in PHP is the most sophisticated stack to quickly build any kinds of PHP applicaiton. This open source application will let you create your application within maximum 120 seconds (2 minutes) without any hassle.
+EST (Eloquent ORM - Slim Framework - Twig Template Engine) Stack in PHP is the most sophisticated stack to quickly build any kinds of PHP applicaiton. This open source application will let you create your application within maximum 120 seconds (2 minutes) without any hassle.
 This stack was first created to quickly build any prototype or any quick but powerful web applicaiton within hour or day and after that I made it open source to make your work more easier.
 
 
@@ -14,23 +14,14 @@ If you have not installed Composer, do that now. I prefer to install Composer gl
 
 After you install Composer, run this command from the directory in which you want to install your new Propel-Slim-Twig Application stack.
 
-    sudo composer create-project previewict/pst-stack [your-app-name]
+    sudo composer create-project kingpabel/est-stack [your-app-name]
 
 Replace <code>[your-app-name]</code> with the desired directory name for your new application. You'll want to:
 * Point your virtual host document root to your new application's `public/` directory.
 * create a database
-* Need to configure Propel and generate it's ORM classes. For now copy/paste `propel.sample`, `runtime-conf.sample`, `schema.sample` and rename it to `propel.ini`, `runtime-conf.xml`, `schema.xml`
-* Replace all `yourdbname` in `propel.ini`, `runtime-conf.xml` and `schema.xml` file with your new database name. Also replace all `yourdbusename` with your database username and `yourdbpassword` with your database password.
-* Execute `propel/schema.xml` in your database
-* Now need to generate Propel ORM classes by the following command
-```bash
-# go into your project root (/var/www/yourprojectdirectory)
-cd /var/www/yourprojectdirectory
-cd propel
-sudo ../vendor/propel/propel/bin/propel sql:build
-sudo ../vendor/propel/propel/bin/propel model:build
-sudo ../vendor/propel/propel/bin/propel config:convert
-```
+* for database config replace public/database.sample to database.php and change database configuration as you need
+* then create a model as your table name in /model/yourTableName.php follow model.sample to model.php
+
 * Again go to your project root and make `/tmp` writable
 ```bash
 cd /var/www/yourprojectdirectory
@@ -43,7 +34,7 @@ That's it! Now go build something cool. Go to your browser and type your applica
 
 ### Pull Requests
 
-1. Fork the Propel-Slim-Twig Application Stack
+1. Fork the Eloquent-Slim-Twig Application Stack
 2. Create a new branch for each feature or improvement
 3. Send a pull request from each feature branch to the **develop** branch
 
