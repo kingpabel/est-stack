@@ -11,7 +11,7 @@
         "slim/views": "0.*",
         "twig/twig": "1.*",
         "ircmaxell/password-compat": "dev-master",
-        "illuminate/database" : "4.*"
+        "illuminate/database" : "4.2.*"
     },
     "autoload": {
         "classmap": ["models/"],
