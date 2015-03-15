@@ -3,6 +3,7 @@ tmp/*
 composer.lock
 
 /models/*
+!/models/model.sample
 /public/database.php
 
 /tmp/*
