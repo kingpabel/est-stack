@@ -1,0 +1,10 @@
+/vendor/
+tmp/*
+composer.lock
+
+/models/*
+/public/database.php
+
+/tmp/*
+
+.idea/*

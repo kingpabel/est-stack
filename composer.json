@@ -1,0 +1,22 @@
+{
+    "name": "previewict/pst-stack",
+    "description": "Propel-Slim-Twig PHP Application Stack. The most sophisticated application stack for starting any PHP application in a minute.",
+    "keywords": ["microframework","rest","router", "propel", "slim", "twig", "stack", "sekeleton"],
+    "homepage": "https://github.com/previewict/pst-stack",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0",
+        "monolog/monolog": "1.*",
+        "slim/slim": "2.*",
+        "slim/views": "0.*",
+        "twig/twig": "1.*",
+        "ircmaxell/password-compat": "dev-master",
+        "illuminate/database" : "4.*"
+    },
+    "autoload": {
+        "classmap": ["models/"],
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}

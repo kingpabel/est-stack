@@ -1,0 +1,21 @@
+<?php
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+$capsule = new Capsule;
+
+$capsule->addConnection([
+        'driver'    => 'mysql',
+        'host'      => 'localhost',
+        'database'  =>  'yourDatabaseName',
+        'username'  => 'UserName',
+        'password'  =>  'Password',
+        'charset'   => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix'    => '',
+        'strict'    => false,
+]);
+
+//$capsule->setCacheManager('/var/eloquent');
+
+$capsule->bootEloquent();
+?>
