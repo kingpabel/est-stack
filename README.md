@@ -14,7 +14,7 @@ If you have not installed Composer, do that now. I prefer to install Composer gl
 
 After you install Composer, run this command from the directory in which you want to install your new Propel-Slim-Twig Application stack.
 
-    sudo composer create-project kingpabel/est-stack [your-app-name]
+    sudo git clone https://github.com/kingpabel/est-stack.git
 
 Replace <code>[your-app-name]</code> with the desired directory name for your new application. You'll want to:
 * Point your virtual host document root to your new application's `public/` directory.
